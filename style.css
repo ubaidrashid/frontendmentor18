@@ -1,0 +1,282 @@
+*,
+::before::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-backgoundbody: hsl(217, 54%, 11%);
+    --clr-backgoundcard: hsl(216, 50%, 16%);
+    --clr-paragraph: hsla(215, 51%, 70%, .5);
+    --clr-special: hsl(178, 100%, 50%);
+    --clr-forwhite: hsl(0, 0%, 100%);
+
+    --fs-paragraph: 18px;
+    --fst-fontfamily: "Outfit", sans-serif;
+
+    --fw-light: font-weight:300;
+    --fw-quarterlight: font-weight:400;
+    --fw-bold: font-weight:600;
+    --br-forRadius: 15px;
+}
+
+@media (min-width:600px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--clr-backgoundbody);
+    }
+
+    .container {
+        border-radius: var(--br-forRadius);
+        width: 300px;
+        /* height: 400px; */
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--clr-backgoundcard);
+    }
+
+    .main-image {
+        border-radius: var(--br-forRadius);
+        height: 300px;
+        width: 300px;
+    }
+
+    .prob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        border-radius: var(--br-forRadius);
+        top: 34%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .img:hover .prob {
+
+        background-color: hsla(178, 100%, 50%, .5);
+        opacity: 1;
+    }
+
+    .para {
+        width: 100%;
+        color: var(--clr-paragraph);
+        font-size: var(--fs-paragraph);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .flex-group {
+        width: 100%;
+        padding: 20px 0px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.685);
+    }
+
+    .last {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color: var(--clr-forwhite);
+        font-family: var(--fst-fontfamily);
+        font-weight: 400;
+        padding-top: 10px;
+        /* word-spacing: 3px; */
+
+    }
+
+    .creation {
+        padding: 0px 5px 0px 10px;
+        color: var(--clr-paragraph);
+    }
+
+    h1 {
+        font-weight: 700;
+    }
+
+    .main-title {
+        /* width: 70%; */
+        color: var(--clr-forwhite);
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        /* font-weight:400; */
+    }
+
+    .flex-group {
+        display: flex;
+        justify-content: space-between;
+        /* border-bottom: 0.5px solid rgba(255, 255, 255, 0.685); */
+
+    }
+
+    .main-title :hover {
+        color: var(--clr-special);
+
+    }
+
+    .ethirium {
+        display: flex;
+        align-items: center;
+    }
+
+    .ethr {
+        color: var(--clr-special);
+        font-family: "Outfit", sans-serif;
+        ;
+        font-weight: 600;
+    }
+
+    .tim {
+        font-family: "Outfit", sans-serif;
+        color: var(--clr-paragraph);
+        /* font-weight: var(--fw-light); */
+        /* font-weight: 500; */
+
+    }
+
+    .l-image {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 40px;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        /* display: block; */
+        display: flex;
+        align-items: center;
+        background-color: var(--clr-backgoundbody);
+        height: 100vh;
+    }
+
+    .container {
+        margin-inline: auto;
+        border-radius: var(--br-forRadius);
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--clr-backgoundcard);
+    }
+
+    .main-image {
+        border-radius: var(--br-forRadius);
+        /* height: 300px; */
+        width: 100%;
+    }
+
+    .para {
+        font-size: 25px;
+        width: 100%;
+        color: var(--clr-paragraph);
+        /* font-size: var(--fs-paragraph); */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+        font-weight: 500;
+    }
+
+    .main-title {
+        /* width: 70%; */
+        color: var(--clr-forwhite);
+        font-size: 15px;
+        font-family: "Outfit", sans-serif;
+        /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        /* font-weight:00; */
+    }
+
+    .main-title :hover {
+        color: var(--clr-special);
+
+    }
+
+    .flex-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.685);
+    
+    }
+.prob{
+    opacity: 0;
+}
+.prob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 36%;
+    width:75%;
+    border-radius: var(--br-forRadius);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img:hover .prob {
+
+    background-color: hsla(178, 100%, 50%, .5);
+    opacity: 1;
+}
+    .ethirium {
+        display: flex;
+        align-items: center;
+    }
+
+    .ethr {
+        font-size: 20px;
+        color: var(--clr-special);
+        font-family: "Outfit", sans-serif;
+        ;
+        font-weight: 600;
+    }
+
+    .tim {
+        font-size: 20px;
+        font-family: "Outfit", sans-serif;
+        color: var(--clr-paragraph);
+        /* font-weight: var(--fw-light); */
+        /* font-weight: 500; */
+
+    }
+    .last {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color: var(--clr-forwhite);
+        font-family: var(--fst-fontfamily);
+        font-weight: 400;
+        padding-top: 10px;
+        /* word-spacing: 3px; */
+
+    }
+
+    .creation {
+        padding: 0px 5px 0px 10px;
+        color: var(--clr-paragraph);
+    }
+
+    .l-image {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 40px;
+    }
+}
+
+.icon{
+
+}
